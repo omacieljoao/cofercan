@@ -1,0 +1,68 @@
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.eyebrow__line {
+  display: inline-block;
+  width: 2rem;
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.eyebrow__text {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+}
+
+.eyebrow--center {
+  justify-content: center;
+}
+
+.eyebrow--center-desktop-left {
+  justify-content: center;
+}
+
+.eyebrow--light .eyebrow__line {
+  background-color: #fff;
+}
+
+.eyebrow--light .eyebrow__text {
+  color: #fff;
+}
+
+.eyebrow--boxed {
+  margin-bottom: 1.25rem;
+}
+
+.eyebrow--boxed .eyebrow__text {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid rgba(237, 87, 44, 0.4);
+  background-color: rgba(237, 87, 44, 0.2);
+}
+
+.eyebrow--pill {
+  margin-bottom: 0.75rem;
+}
+
+.eyebrow--pill .eyebrow__line {
+  height: 2px;
+}
+
+.eyebrow--pill .eyebrow__text {
+  padding: 0.125rem 0.75rem;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 1024px) {
+  .eyebrow--center-desktop-left {
+    justify-content: flex-start;
+  }
+}

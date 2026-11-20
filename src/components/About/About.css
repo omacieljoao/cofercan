@@ -1,0 +1,50 @@
+.about {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  background-color: var(--color-orange);
+  background-image: linear-gradient(135deg, var(--color-orange) 0%, var(--color-brown) 100%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 36px 36px, 36px 36px;
+  color: #fff;
+}
+
+.about__slash {
+  position: absolute;
+  top: 0;
+  left: 33.333%;
+  width: 160px;
+  height: 140%;
+  background: linear-gradient(135deg, rgba(237, 87, 44, 0.35) 0%, rgba(237, 87, 44, 0.04) 100%);
+  opacity: 0.2;
+  transform: skewX(-26deg);
+  pointer-events: none;
+}
+
+.about__container {
+  position: relative;
+  z-index: 10;
+}
+
+.about__intro {
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.about__title {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.07), 0 2px 2px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 640px) {
+  .about__title {
+    font-size: 2.25rem;
+  }
+}
